@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NotPhotos">
+<head>
+  <meta charset="UTF-8">
+  <title>None Homework Homework</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript" src="js/factory.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body ng-controller="TheController as ctrl">
+  <h1>{{ ctrl.title }}</h1>
+  <p>[add]</p>
+  <ul>
+    <li ng-repeat="photo in ctrl.photos">
+    <button ng-click="ctrl.editPhoto(photo)">edit</button>
+    <button ng-click="ctrl.delete(photo)">delete</button>
+    <a href="{{ photo.url }}">{{ photo.title }}</a>
+    </li>
+  </ul>
+</body>
+</html>
