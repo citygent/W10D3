@@ -13,8 +13,10 @@ angular.module('NotPhotos').factory('PhotoFactory', function($http, $q) {
         });
         return deferred.promise;
     },
-    editPhoto: function() {
+    editPhoto: function(photo) {
       console.log("you're in edit photo")
+      console.log(photo)
+      return 'returning from edit';
     }
 
 

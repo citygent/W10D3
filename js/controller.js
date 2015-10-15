@@ -10,6 +10,6 @@ function TheController(PhotoFactory) {
       self.photos = res;
     })
 
-  this.edit = PhotoFactory.editPhoto()
+  this.edit = PhotoFactory.editPhoto;
 
 }

@@ -14,7 +14,7 @@
   <p>[add]</p>
   <ul>
     <li ng-repeat="photo in ctrl.photos">
-    <button ng-click="ctrl.editPhoto(photo)">edit</button>
+    <button ng-click="ctrl.edit(photo)">edit</button>
     <button ng-click="ctrl.delete(photo)">delete</button>
     <a href="{{ photo.url }}">{{ photo.title }}</a>
     </li>
